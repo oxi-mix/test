@@ -15,7 +15,8 @@ public class Application {
             personList.add(person);
         }
 
-        personList.sort(Comparator.comparing(Person::getAge));
+        personList.sort(Comparator.comparing(Person::getAge)); // asc
+//        personList.sort((a1, a2) -> a2.getAge().compareTo(a1.getAge())); // desc
         personList.forEach(System.out::println);
     }
 
